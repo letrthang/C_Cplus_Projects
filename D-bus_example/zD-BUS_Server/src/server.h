@@ -1,0 +1,17 @@
+#ifndef SERVER_H
+#define SERVER_H
+
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// Thread functions' definition
+/////////////////////////////////////////////////////////////////////////////////////////
+void create();
+void* run(void * p);
+void stop();
+int startDBusCommunication();
+int stopDBusCommunication();
+
+#endif
